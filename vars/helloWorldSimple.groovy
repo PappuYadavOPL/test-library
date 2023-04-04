@@ -1,10 +1,3 @@
-pipeline {
-    agent any
-    stages {
-        stage('Example') {
-            steps {
-                sh 'echo Hello World'
-            }
-        }
-  }
+def call(String name, String dayOfWeek) {
+  sh "echo Hello World ${name}. It is ${dayOfWeek}."
 }
